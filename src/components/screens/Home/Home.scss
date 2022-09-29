@@ -1,0 +1,32 @@
+@import "./Scss/Form.scss";
+@import "./Scss/Price.scss";
+
+.home {
+  @apply w-full;
+
+  &-title {
+    @apply mb-14 text-blackColor;
+    h1 {
+      display: block;
+      line-height: 1;
+      font: {
+        size: 54px;
+        family: "Nekst";
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $media480) {
+  .home {
+
+    &-title {
+      h1 {
+        font: {
+          size: 34px;
+          family: "Nekst";
+        }
+      }
+    }
+  }
+}

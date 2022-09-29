@@ -1,0 +1,46 @@
+.price {
+  &-items {
+    @apply flex justify-between flex-wrap w-full;
+
+    .price-item {
+      width: 33%;
+
+      .price-title {
+        @apply mb-2;
+      }
+      .prices {
+        @apply text-5xl;
+        font-family: "Nekst";
+      }
+    }
+  }
+  .prices-btn {
+    @apply flex items-end;
+
+    .btn {
+      @apply block bg-orangeColor text-white py-6;
+      width: calc(100% - 32px);
+      font-family: "Nekst";
+      font-size: 30px;
+      border-radius: 40px;
+
+      transition: background 0.3s ease-in;
+
+      &:hover {
+        background: #111111;
+      }
+
+      &:active {
+        background: #575757;
+      }
+
+      &:disabled {
+        background: rgba(255, 149, 20, 0.4);
+        &:hover {
+          background: rgba(255, 149, 20, 0.4);
+        }
+      }
+    }
+  }
+}
+@import "./PriceMedia.scss";

@@ -1,0 +1,21 @@
+@media screen and (max-width: $media1024) {
+  .price {
+    &-items {
+      .price-item {
+        @apply mb-11;
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $media768) {
+  .price {
+    &-items {
+      .price-item {
+        @apply mb-11;
+        width: 100%;
+      }
+    }
+  }
+}

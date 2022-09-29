@@ -1,0 +1,28 @@
+@import "./fonts/fonst.scss";
+@import "./Scss/var";
+
+@import "./components/screens/Home/Home.scss";
+
+body {
+  @apply bg-mainColor text-grayColor;
+}
+
+.app {
+  font-family: "Gilroy";
+
+  @apply w-screen h-screen flex items-center p-8 text-base;
+}
+
+.loader{
+  @apply absolute z-20 ;
+  top: 50%;
+  left: 50%;
+}
+
+@media screen and (max-width: $media768) {
+  .app {
+    font-family: "Gilroy";
+
+    @apply w-full h-full;
+  }
+}

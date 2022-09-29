@@ -1,0 +1,44 @@
+@media screen and (max-width: $media1024) {
+  .form {
+    > div {
+      @apply flex-wrap;
+    }
+
+    .input-name {
+      @apply mb-10;
+    }
+
+    .input-block {
+      > div {
+        .input {
+          @apply mr-0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $media768) {
+  .form {
+    > div {
+      @apply flex-wrap;
+    }
+
+    .input-name {
+      @apply mb-10;
+    }
+
+    .input-block {
+      .input-icons,
+      .contribution {
+        width: 70px;
+        right: 0;
+      }
+      > div {
+        .input {
+          @apply w-full;
+        }
+      }
+    }
+  }
+}
